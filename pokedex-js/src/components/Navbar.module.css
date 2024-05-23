@@ -1,0 +1,33 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#cc322a;
+    height: 5rem;
+    padding: 1rem 3rem;
+    font-size: 3rem;
+}
+
+.search {
+    display: flex;
+    gap: 0.5rem; 
+}
+
+.search input {
+    padding: .4rem .8rem;
+    border-radius: 4px;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    background-color: white ;
+    padding: .3rem;
+    border-radius: 4px;
+    color:black;
+    font-size: 1.2rem;
+}
+
+.search button:hover {
+    background-color: lightgray;
+}
