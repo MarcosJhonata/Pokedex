@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios";
-
+import style from "./Pokemon.module.css";
 
 export function Pokemon ({data}) {
 
@@ -14,10 +14,10 @@ export function Pokemon ({data}) {
         return <div>-</div>
     }
       return (
-         <div >        
+         <div className={style.card} >        
                 <img src={details.sprites.front_default} alt="" />
                 <b>{details.name} </b> 
-                - EXP {details.base_experience}                   
+                EXP {details.base_experience}                  
         </div>
       ) ;
   

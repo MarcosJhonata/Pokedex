@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc322a;
+  gap:.5rem;
+  padding: 1rem 1rem;
+  width: 30rem;
+  margin: .5rem 2rem;
+  text-transform: uppercase;
+}
+
+.card img {
+  width: 7rem;
+  height: 7rem;
+}

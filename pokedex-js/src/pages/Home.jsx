@@ -2,6 +2,7 @@
 import { useEffect , useState } from "react";
 import axios from "axios";
 import Pokemon from "../components/Pokemon";
+import style from './Home.module.css'
 
 export function Home () {
     const [list , setList] = useState([]);
@@ -12,10 +13,13 @@ export function Home () {
 
     return(
 
-     <div>  
-        {list.map((item) => (
-        <Pokemon key={item.data} data={item}/>
+     <div> 
+        <div className={style.container}>
+             {list.map((item) => (
+            <Pokemon key={item.data} data={item}/>
         ))}      
+        </div> 
+       
      </div>
 
     )
